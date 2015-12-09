@@ -16,62 +16,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="media/js/bootstrap.min.js"></script>
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            width: 50%;
-            margin: auto;
-            height:30%;
-        }
-        .brandheader{
-            color:#458b00;
-            font-weight:bold;
-        }
-
-        .section.onethird .w3-card-2 {
-            padding: 15px 10px;
-            height: 260px;
-        }
-
-        h2 {
-            font-size: 40px;
-            color: #555555;
-            letter-spacing: 0.3em;
-        }
-
-        .section {
-            padding: 4%;
-        }
-
-        .centerme{
-            width:100%;
-            height:15%;
-            background-color:#458b00;
-            color:#fff;
-            padding:60px 0;
-            line-height:15%;
-            text-align:center;
-        }
-        #footer{
-            bottom:0;
-            position:absolute;
-            height:30px;
-            border:1px solid #f2f2f2;
-            font-size: 10px;
-        }
-
-        #footer > span{
-            text-align: center;
-        }
-
-
-    </style>
     <div id="container">
         <div id="header">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand brandheader" href="#">SOLPOINT BUSINESS SOLUTIONS</a>
+                        <a class="tel-link" href="tel:0 714 519 655"> 📞 0 714 519 655</a>
                     </div>
                     <div>
                         <ul class="nav navbar-nav menuenliste">
@@ -123,8 +74,16 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div class="centerme">
-                <p style="font-size: 30px;letter-spacing: 0.3em;">WHERE EDUCATION MEETS TALENT</p>
+
+            <div class="flip-container centerme" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <p style="font-size: 30px;letter-spacing: 0.3em;">WHERE EDUCATION MEETS TALENT....</p>
+                    </div>
+                    <div class="back">
+                        <p style="font-size: 30px;letter-spacing: 0.3em;">..AND TALENT MEETS SUCCESS</p>
+                    </div>
+                </div>
             </div>
 
 
@@ -147,7 +106,7 @@
                     <div class="w3-card-2 w3-white w3-card-16">
                         <h2>KNOW US</h2>
                         <p>Know about us, our mission and what our clients say..</p>
-                        <a href="#" class="w3-btn sectionbtn">ABOUT US</a>
+                        <a href="#" class="w3-btn sectionbtn">OUR MISSION</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +114,10 @@
 
         </div>
         <div  class="w3-topnav w3-center w3-theme" id="footer">
-            <span style="float:right">SOLPOINT BUSINESS SOLUTIONS</span>
+            <span style="float:right">
+                SOLPOINT BUSINESS SOLUTIONS &copy;2015
+                <a class="tel-link" href="tel:0 714 519 655"> 📞 0 714 519 655</a>
+            </span>
         </div>
     </div>
 

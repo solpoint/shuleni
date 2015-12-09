@@ -1,3 +1,108 @@
+#container {
+    min-height:100%;
+    position:relative;
+}
 .menuenliste{
     float:right
+}
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     width: 50%;
+     margin: auto;
+     height:30%;
+ }
+.brandheader{
+    color:#458b00;
+    font-weight:bold;
+}
+
+.section.onethird .w3-card-2 {
+    padding: 15px 10px;
+    height: 260px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #555555;
+    letter-spacing: 0.3em;
+}
+
+.section {
+    padding: 4%;
+}
+
+.centerme{
+    width:100%;
+    height:15%;
+    background-color:#458b00;
+    color:#fff;
+    padding:60px 0;
+    line-height:15%;
+    text-align:center;
+}
+#footer{
+    bottom:0;
+    position:absolute;
+    height:30px;
+    border:1px solid #f2f2f2;
+    font-size: 10px;
+    width:100%;
+}
+
+#footer > span{
+    text-align: center;
+}
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    color: #fecc00;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contacts span:before, .contacts .tel-link:before, .contacts a:before {
+    font: 12px/18px 'SSPika';
+    content: '?';
+    padding: 1px 5px 0 0;
+    z-index: -1;
+    display: inline-block;
+    vertical-align: top;
 }
